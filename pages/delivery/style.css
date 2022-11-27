@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0 auto;
+    min-height: 100vh;
+    font-family: 'Noto Serif', serif;
+    font-size: 1.6rem;
+    color: #090909;
+}
+
+/* ============
+Global Styles
+==============*/
+
+img {
+    max-width: 100%;
+    min-height: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    transition: all.2s ease-in-out;
+}
+
+/* ====================
+Main Block and Buttons
+======================= */
+
+main {
+    background: url("../../assets/images/bg-main.jpg") 100% 100%, 100%/cover no-repeat;
+    min-height: 100vh;
+    opacity: 0.75;
+}
+
+.btn {
+    padding: 1rem 2.5rem;
+    border-radius: 2.5rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 500;
+    letter-spacing: 1.1px;
+}
+
+.btn-confirm,
+.btn-purchase {
+    background-color: maroon;
+    transition: all 0.3s linear;
+}
+
+.btn-confirm:hover,
+.btn-purchase:hover {
+    background: #00a9a8;
+    color: #800000;
+    font-weight: 700;
+    letter-spacing: .5px;
+    border: transparent;
+    outline: none;
+    transform: scale(1.025);
+}
+
+.btn-link {
+    color: white;
+}
+
+.btn-link:hover {
+    color: maroon;
+}
+
+
+/* ============
+Order Form
+==============*/
+
+.order-books {
+    width: 77rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.total {
+    font-weight: 700;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.remove {
+    font-weight: 700;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    color: maroon;
+}
+
+.delete:hover {
+    color: red;
+    transform: scale(1.5);
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    width: 38rem;
+}
+
+.delivery-form {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: space-between;
+    background: #e2e282;
+    padding: 1.5rem 3rem 4rem;
+    border: 1px solid maroon;
+    border-radius: 15px;
+}
+.books-catalogue {
+    background: transparent;
+    border: transparent;
+}
+
+.form p {
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin: 2rem 0 1rem;
+}
+
+.payment-details {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.payment-details label {
+    margin-right: 2rem;
+}
+
+.gifts {
+    flex-direction: column;
+    margin-bottom: 3rem;
+}
+
+.gifts label {
+    font-size: 1.5rem;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+fieldset {
+    margin-bottom: 1rem;
+    border: transparent;
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset label {
+    margin-bottom: .5rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+input {
+    padding: .5rem;
+    border: 1px solid red;
+    border-radius: .4rem;
+}
+
+.payment-details label {
+    font-size: 1.55rem;
+}
+
+input[type="radio"] {
+    margin-right: .5rem;
+    margin-top: .5rem;
+    appearance: none;
+    background-color: transparent;
+    width: 12px;
+    height: 12px;
+    border: 1px solid maroon;
+    border-radius: 50%;
+    background: transparent;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="radio"]:checked {
+    background: maroon;
+    border: 1px solid maroon;
+}
+
+
+
+
+

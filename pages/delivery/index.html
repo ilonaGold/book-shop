@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshop || Order Form</title>
+    <!-- google fonts link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,500&family=Noto+Serif:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.0/css/all.css">
+    <!-- normalize css link  -->
+    <link rel="stylesheet" href="assets/styles/normalize.css">
+    <!-- custom css link  -->
+    <link rel="stylesheet" href="/pages/delivery/style.css">
+</head>
+
+<body>
+    <main>
+        <section class="delivery-form">
+            <form action="#" class="form">
+                <p class="shipping-heading">Shipping details</p>
+                <!-- personal data starts -->
+                <section class="personal-data flex">
+                    <!-- first name starts-->
+                    <fieldset>
+                        <label id="name-label">FIRST:</label>
+                        <input type="text" name="first" id="first" class="form-controls" placeholder="name" required />
+                    </fieldset>
+                    <!-- first name starts-->
+                    <!-- surname starts-->
+                    <fieldset>
+                        <label id="name-label">LAST:</label>
+                        <input type="text" name="last" id="last" class="form-controls" placeholder="surname" required />
+                    </fieldset>
+                    <!-- surname ends-->
+                </section>
+                <!-- personal data ends -->
+                <!-- delivery date starts -->
+                <fieldset>
+                    <label id="name-label">DELIVERY DATE:</label>
+                    <input type="date" name="delivery-date" id="delivery-date" class="form-controls" required />
+                </fieldset>
+                <!-- delivery date ends -->
+                <!-- address starts -->
+                <p class="address-heading">Address</p>
+                <!-- street name starts -->
+                <section class="address-data">
+                    <fieldset>
+                        <label id="street">STREET:</label>
+                        <input type="text" name="street" id="street" class="form-controls" placeholder="street"
+                            required />
+                    </fieldset>
+                    <!-- street name ends -->
+                    <div class="street-details flex">
+                        <!-- house number starts-->
+                        <fieldset>
+                            <label id="number-label">HOUSE:</label>
+                            <input type="number" name="house" id="house" class="form-controls"
+                                placeholder="house number" required />
+                        </fieldset>
+                        <!-- house number ends-->
+                        <!-- flat number starts-->
+                        <fieldset>
+                            <label id="number-label">FLAT:</label>
+                            <input type="number" name="flat" id="flat" class="form-controls" placeholder="flat number"
+                                required />
+                        </fieldset>
+                        <!-- surname ends-->
+                    </div>
+                </section>
+                <!-- address ends -->
+                <!-- payment info starts -->
+                <p class="payment-heading">Payment Information</p>
+                <div class="payment-details flex">
+                    <input class="input-cash" type="radio" name="option" value="card" />
+                    <label for="option1" class="form-label" id="option1">Card</label>
+                    <input class="input-card" type="radio" name="option" value="cash" checked />
+                    <label for="option2" class="form-label" id="option2">Cash</label>
+                </div>
+                <!-- payment info ends -->
+                <!-- gifts starts -->
+                <p class="gifts-heading">Choose 2 gifts (optional)</p>
+                <section class="flex gifts">
+                    <div>
+                        <label for="option1"><input type="checkbox" id="option1" name="option" value="gift" />
+                            Pack as a gift
+                        </label>
+                    </div>
+                    <div>
+                        <label for="option2"><input type="checkbox" id="option2" name="option" value="gift" />
+                            Add postcard
+                        </label>
+                    </div>
+                    <div>
+                        <label for="option3"><input type="checkbox" id="option3" name="option" value="gift" />
+                            Provide 2% discount to the next time
+                        </label>
+                    </div>
+                    <div>
+                        <label for="option4"><input type="checkbox" id="option4" name="option" value="gift" />
+                            Branded pen or pencil
+                        </label>
+                    </div>
+                </section>
+                <!-- gifts ends -->
+                <div class="btn-container">
+                    <button class="btn btn-purchase"><a class="btn-link" href="#">PURCHASE</a></button>
+                </div>
+            </form>
+        </section>
+        <!-- </section> -->
+    </main>
+    <script src="pages/delivery.script.js"></script>
+</body>
+
+</html>
